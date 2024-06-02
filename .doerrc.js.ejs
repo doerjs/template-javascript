@@ -13,8 +13,8 @@ module.exports = {
   browserHistory: false,
 
   plugins: [
-  <% if (answers.style === 'less') { %>
-  '<%= packages.pluginLess.name %>',
+  <% if (config.style === 'less') { %>
+  '<%= packages['@doerjs/plugin-less'].name %>',
   <% } %>
   ],
 
